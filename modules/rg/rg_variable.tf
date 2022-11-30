@@ -1,10 +1,10 @@
 variable "rg_name" {
-    description = "resource group name."
-    default     = "techslate-rg-storage"
+    description = "Resource group name"
+    default     = "techslate-modules-rg"
 }
 
 variable "location" {
-    description = "Location where the resources will be created."
+    description = "Location where the resources will be created"
     default     = "uksouth"
 }
 
@@ -13,6 +13,6 @@ variable "tags" {
     type = map(string)
     default = {
         "environment" = "dev"
-        "source" = "terraform"
+        "source" = "terraform" 
     }
 }
