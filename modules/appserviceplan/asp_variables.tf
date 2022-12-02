@@ -4,17 +4,14 @@ variable "rg_name" {
   default = "hareeshr-rg"
 }
 
+variable "asp_name" {
+  description = " (Required) Specifies the name of the App Service Plan."
+  type = string
+  default = "hareeshr-asp"
+}
+
 variable "location" {
     description =  "(Required) The Azure Region where the Resource Group should exist. Changing this forces a new Resource Group to be created."
     type = string
     default = "ukwest"  
-}
-
-variable "tags" {
-    description =  "(Optional) A mapping of tags which should be assigned to the Resource Group."
-    type = map(string)
-    default = { 
-        environment = "dev"
-        source = "terraform"     
-    }
 }

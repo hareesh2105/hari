@@ -1,9 +1,9 @@
 output "key_vault_id" {
-  description = "key vault id"
+  description = "The id of the key vault"
   value = azurerm_key_vault.key_vault.id
 }
 
 output "key_vault_name" {
-  description = "key vault name"
+  description = "The name of the key vault"
   value = azurerm_key_vault.key_vault.name
 }
