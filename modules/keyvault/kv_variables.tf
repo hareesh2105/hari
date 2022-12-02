@@ -1,16 +1,16 @@
 variable "rg_name" {
     description =  "Resource group name"
-    default = "hareesh-rg"  
+    default = "hareeshh-rg"  
 }
 
 variable "kv_name" {
     description =  "Keyvault Name"
-    default = "hareesh-kv"
+    default = "hareeshh-kv"
 }
 
 variable "location" {
     description =  "Keyvault Location"
-    default = "uksouth"  
+    default = "ukwest"  
 }
 
 variable "tenant_id" {

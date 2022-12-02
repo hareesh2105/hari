@@ -1,13 +1,13 @@
 variable "rg_name" {
   description = "Name of the Resource group"
   type = string
-  default = "hareesh=rg"
+  default = "hareeshh-rg"
 }
 
 variable "location" {
     description =  "Location where this will be located"
     type = string
-    default = "uksouth"  
+    default = "ukwest"  
 }
 
 variable "tags" {

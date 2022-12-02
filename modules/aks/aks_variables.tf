@@ -1,9 +1,9 @@
 variable "rg_name" {
     description =  "Resource Group name"
-    default = "hareesh-rg"  
+    default = "hareeshh-rg"  
 }
 
 variable "location" {
     description =  "Keyvault Location"
-    default = "uksouth"  
+    default = "ukwest"  
 }

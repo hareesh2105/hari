@@ -1,11 +1,11 @@
 variable "rg_name" {
   description = "name of the resource"  
-  default = "hareesh-rg"
+  default = "hareeshh-rg"
 }
 
 variable "location" {
     description =  "Location where this will be created"    
-    default = "uksouth"  
+    default = "ukwest"  
 }
 
 variable "tags" {
@@ -21,7 +21,7 @@ variable "tags" {
 
 variable "kv_name" {
   description = "name of keyvalut"
-  default = "hareesh-kv"
+  default = "hareeshh-kv"
 }
 
 variable "secret_names" {
@@ -31,9 +31,9 @@ variable "secret_names" {
 
 variable "fun_name" {
   description = "name of functionapp"
-  default = "hareesh-fun"
+  default = "hareeshh-fun"
 }
 
 variable "storage_account_access_key" {
-    default = "hareesh-fun"
+    default = "hareeshh-fun"
 }
