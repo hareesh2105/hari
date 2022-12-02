@@ -1,25 +1,24 @@
-variable "location" {
-    description = "Location where it will be located"
-    default     = "uksouth"  
+variable "rg_name" {
+    description =  "Resource group name"
+    default = "hareesh-rg"  
 }
 
 variable "kv_name" {
-    description =  "key vault name"
-    default     = "harish-kv"  
+    description =  "Keyvault Name"
+    default = "hareesh-kv"
 }
 
-
-variable "rg_name" {
-    description =  "Resource Group name"
-    default     = "harish-rg"  
+variable "location" {
+    description =  "Keyvault Location"
+    default = "uksouth"  
 }
 
 variable "tenant_id" {
-    description =  "id"
-    default     = ""  
+    description =  "Tenant Id"
+    default = ""  
 }
 
 variable "object_id" {
-    description =  "object id"
-    default     = ""  
+    description =  "object Id"
+    default = ""  
 }

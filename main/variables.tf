@@ -1,17 +1,15 @@
 variable "rg_name" {
-  description = "Resource Group Name"
-  type        = string  
-  default     = "harish-rg"
+  description = "name of the resource"  
+  default = "hareesh-rg"
 }
 
 variable "location" {
-    description =  "Location where this will be created."   
-    type        = string 
-    default     = "uksouth"  
+    description =  "Location where this will be created"    
+    default = "uksouth"  
 }
 
 variable "tags" {
-    description =  "Tags for the Resource Group."
+    description =  "Tags for the resource group"
     default = {  
       "source" = "terraform"
       "env"    = "dev"
@@ -20,21 +18,22 @@ variable "tags" {
     }
 }
 
+
 variable "kv_name" {
-  description = "name of keyvault"
-  type        = string
-  default     = "harish-kv"
+  description = "name of keyvalut"
+  default = "hareesh-kv"
+}
+
+variable "secret_names" {
+  description = "name of secret"
+  default = "default_secret_name"
 }
 
 variable "fun_name" {
-  description = "name of function app"
-  type        = string
-  default     = "harish-funapp"
+  description = "name of functionapp"
+  default = "hareesh-fun"
 }
 
 variable "storage_account_access_key" {
-    description = "storage account access keys"
-    type        = string
-    default     = "harist"
-
+    default = "hareesh-fun"
 }

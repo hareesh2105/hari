@@ -21,19 +21,20 @@ module "key_vault" {
   object_id = data.azurerm_client_config.current.object_id
 }
 
-module "cosmosdb_account" {    
-  source    = "../modules/cosmosDB"
-  depends_on = [ module.key_vault ]
+
+module "aks" {    
+  source    = "../modules/aks"
+  depends_on = [ module.resource_group ]
   rg_name   = var.rg_name
   location  = var.location  
 }
 
 module "key_vault_secret" {
-  source              = "../modules/keyvaultsecrets"
-  depends_on          = [module.key_vault, module.cosmosdb_account]
+  source              = "../modules/keyvaultsecret"
+  depends_on          = [module.key_vault, module.aks]
   key_vault_id        = module.key_vault.key_vault_id
   secret_names = {
-    "cosmos-db-primary-key"   = module.cosmosdb_account.primary_key
-    "cosmos-db-secondary-key" = module.cosmosdb_account.secondary_key
+    "aks-kube-config"   = module.aks.kube_config
+    "aks-certifcates"   = module.aks.client_certificate
   }
 }
